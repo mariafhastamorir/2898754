@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo miscelanea</title>
+</head>
+<body>
+    <!-- menu principal desde aqui-->
+    <h1>MENU EJERCICOS MISCELANEA</h1>
+    <h3>Seleccione el tipo de ejercicio que desee</h3>
+
+    <label for="ejercicios">Tipo de ejercicios</label>
+    <select id="ejercicios" name="ejercicios">
+        <option value="elegir">Elegir</option>
+        <option value="Operadores">Operadores</option>
+        <option value="Condicionales">Condicionales</option>
+        <option value="Ciclos">Ciclos</option>
+    </select>
+    <!-- menu principal hasta aqui-->
+
+    <!-- menu de operadores desde aqui-->
+    <div id="ejerciciosOperadores" style="display: none;">
+        <h1>Ejercicios de operadores</h1>
+        <label for="operadores">Operadores</label>
+        <select id="operadores" name="operadores">
+            <option value="operadores0">0. Elegir</option>
+            <option value="operadores1">1. Calcular el area de un triangulo</option>
+            <option value="operadores2">2. Ingresar dos números por teclado y sumarlos</option>
+            <option value="operadores3">3. Ingresar un número y visualizar el número elevado al cuadrado</option>
+            <option value="operadores4">4. Escribir un algoritmo que convierta de euros a dólares</option>
+            <option value="operadores5">5. Escribir un algoritmo que pida el lado de un cuadrado y muestre el valor del área y del perimetro</option>
+            <option value="operadores6">6. Escribir un algoritmo que determine el área y el volúmen de un cilindro</option>
+            <option value="operadores7">7. Realizar un algoritmo que lea el radio de una circunferencia escriba la longitud de la misma y el área (pi*r)^2 del círculo inscrito</option>
+            <option value="operadores8">8. Calcular el promedio de tres (3) números ingresados por teclado</option>
+        </select>
+    </div>
+    <!-- menu de operadores hasta aqui-->
+
+ <div id="elegir1" style="display: none;"></div>   
+
+<div id="operadores1Formulario" style="display: none;">
+    <h2>1. Calcular el area de un triangulo:</h2>
+    <form id="trianguloForm">
+        <label for="base">Ingrese la base:</label>
+        <input type="number" id="base" name="base"><br><br>
+        <label for="altura1">Ingrese la altura:</label>
+        <input type="number" id="altura1" name="altura1"><br><br>
+        <button type="button" onclick="operadores1()">Calcular Área</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado1"></p>
+</div>
+
+<div id="operadores2Formulario" style="display: none;">
+    <h2>2. Ingresar dos números por teclado y sumarlos:</h2>
+    <form id="sumarForm">
+        <label for="numUno">Ingrese número uno:</label>
+        <input type="number" id="numUno" name="numUno"><br><br>
+        <label for="numDos">Ingrese número dos:</label>
+        <input type="number" id="numDos" name="numDos"><br><br>
+        <button type="button" onclick="operadores2()">Sumar</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado2"></p>
+</div>
+    
+
+    
+<div id="operadores3Formulario" style="display: none;">
+    <h2>3. Ingresar un número y visualizar el número elevado al cuadrado: </h2>
+    <form id="cuadradoForm">
+        <label for="numTres">Ingrese número uno:</label>
+        <input type="number" id="numTres" name="numTres"><br><br>
+        <button type="button" onclick="operadores3()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado3"></p>
+</div>
+    
+
+    
+<div id="operadores4Formulario" style="display: none;">
+    <h2>4. Escribir un algoritmo que convierta de euros a dólares: </h2>
+    <form id="eurosForm">
+        <label for="euros">Ingrese el valor en euros: </label>
+        <input type="number" id="euros" name="euros"><br><br>
+        <button type="button" onclick="operadores4()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado4"></p>
+</div>
+
+    
+
+<div id="operadores5Formulario" style="display: none;">
+    <h2>5. Escribir un algoritmo que pida el lado de un cuadrado y muestre el valor del área y del perimetro </h2>
+    <form id="areaperimetroForm">
+        <label for="lado">Ingrese el valor del lado del cuadrado: </label>
+        <input type="number" id="lado" name="lado"><br><br>
+        <button type="button" onclick="operadores5()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado5"></p>
+</div>
+    
+
+<div id="operadores6Formulario" style="display: none;">
+    <h2>6. Escribir un algoritmo que determine el área y el volúmen de un cilindro:</h2>
+    <form id="cilindroForm">
+        <label for="radio">Ingrese el valor del radio:</label>
+        <input type="number" id="radio" name="radio"><br><br>
+        <label for="altura">Ingrese el valor de la altura:</label>
+        <input type="number" id="altura" name="altura"><br><br>
+        <button type="button" onclick="operadores6()">Calcular</button>
+    </form>
+
+    <h3>Resultados:</h3>
+    <p id="resultados6"></p>
+</div>
+
+    
+
+<div id="operadores7Formulario" style="display: none;">
+        <h2>7. Realizar un algoritmo que lea el radio de una circunferencia y escriba la longitud de la misma y el área (pi*r)^2 del círculo inscrito</h2>
+    <form id="circuloForm">
+        <label for="radio1">Ingrese el valor del radio: </label>
+        <input type="number" id="radio1" name="radio1"><br><br>
+        <button type="button" onclick="operadores7()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado7"></p>
+</div>
+
+    
+
+    
+<div id="operadores8Formulario" style="display: none;">
+    <h2>8. Calcular el promedio de tres (3) números ingresados por teclado: </h2>
+    <form id="promedioForm">
+        <label for="numCuatro">Ingrese el primer número: </label>
+        <input type="number" id="numCuatro" name="numCuatro"><br><br>
+        <label for="numCinco">Ingrese el segundo número: </label>
+        <input type="number" id="numCinco" name="numCinco"><br><br>
+        <label for="numSeis">Ingrese el tercer número: </label>
+        <input type="number" id="numSeis" name="numSeis"><br><br>
+        <button type="button" onclick="operadores8()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado8"></p>
+</div>
+
+    
+
+    <!-- menu de condicionales desde aqui-->
+    <div id="ejerciciosCondicionales" style="display: none;">
+        <h1>Ejercicios condicionales</h1>
+        <label for="condicionales">Condicionales</label>
+        <select id="condicionales" name="condicionales">
+            <option value="condicionales0">0. Elegir</option>
+            <option value="condicionales1">1. Escribir un algoritmo para saber si el número ingresado por teclado es positivo o negativo.</option>
+            <option value="condicionales2">2. Escribir un algoritmo que reciba dos números por teclado y diga cuál es el mayor y cuál el menor </option>
+            <option value="condicionales3">3. Escriba un programa que lea tres números enteros positivos y que calcule e imprima en pantalla el menor y el mayor de ellos</option>
+            <option value="condicionales4">4. Dados dos números A y B, sumarlos si A es menor que B o sino restarlos.</option>
+            <option value="condicionales5">5. Dados dos números A y B encontrar el cociente entre A y B. Recordar que la división por cero no está definida, 
+            en ese caso debe aparecer una leyenda anunciando que la divisiónno es posible</option>
+            <option value="condicionales6">6. Dados dos números A y B, sumarlos si al menos uno de ellos es negativo, en caso contrario multiplicarlos.</option>
+            <option value="condicionales7">7.Escribir un algoritmo que determine si un año es bisiesto o no.</option>
+        </select>
+    </div>
+    <!-- menu de condicionales hasta aqui-->
+
+    <div id="condicionales1Formulario" style="display: none;">
+        <h2>1. Escribir un algoritmo para saber si el número ingresado por teclado es positivo o negativo. </h2>
+        <form id="condicional1Form">
+            <label for="numSiete">Ingrese un número negativo o positivo: </label>
+            <input type="number" id="numSiete" name="numSiete"><br><br>
+            <button type="button" onclick="condicionales1()">Calcular</button>
+        </form>
+        
+        <h3>Resultado:</h3>
+        <p id="resultado9"></p>
+    </div>
+
+<div id="condicionales2Formulario" style="display: none;">
+    <h2>2. Escribir un algoritmo que reciba dos números por teclado y diga cuál es el mayor y cuál el menor: </h2>
+    <form id="condicional2Form">
+        <label for="numOcho">Ingrese el primer número: </label>
+        <input type="number" id="numOcho" name="numOcho"><br><br>
+        <label for="numNueve">Ingrese el segundo número: </label>
+        <input type="number" id="numNueve" name="numNueve"><br><br>
+        <button type="button" onclick="condicional2()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado10"></p>
+</div>
+
+<div id="condicionales3Formulario" style="display: none;">
+
+    <h2>3. Escriba un programa que lea tres números enteros positivos y que calcule e imprima en pantalla el menor y el mayor de ellos:</h2>
+    <form id="condicional3Form">
+        <label for="numDie">Ingrese el primer número: </label>
+        <input type="number" id="numDie" name="numDie"><br><br>
+        <label for="numOnce">Ingrese el segundo número: </label>
+        <input type="number" id="numOnce" name="numOnce"><br><br>
+        <label for="numDoce">Ingrese el tercer número: </label>
+        <input type="number" id="numDoce" name="numDoce"><br><br>
+        <button type="button" onclick="condicional3()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado11"></p>
+</div>
+
+<div id="condicionales4Formulario" style="display: none;">
+    <h2>4. Dados dos números A y B, sumarlos si A es menor que B o sino restarlos.</h2>
+    <form id="condicional4Form">
+        <label for="numA">Por favor, ingrese el valor para a: </label>
+        <input type="number" id="numA" name="numA"><br><br>
+        <label for="numB">Por favor, ingrese el valor para b: </label>
+        <input type="number" id="numB" name="numB"><br><br>
+        <button type="button" onclick="condicional4()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado12"></p>
+</div>
+
+<div id="condicionales5Formulario" style="display: none;">
+
+    <h2>5. Dados dos números A y B encontrar el cociente entre A y B.
+     Recordar que la división por cero no está definida,
+     en ese caso debe aparecer una leyenda anunciando que la división no es posible</h2>
+    <form id="condicional5Form">
+        <label for="dividendo">Por favor, ingrese el valor para a: </label>
+        <input type="number" id="dividendo" name="dividendo"><br><br>
+        <label for="divisor">Por favor, ingrese el valor para b: </label>
+        <input type="number" id="divisor" name="divisor"><br><br>
+        <button type="button" onclick="condicional5()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado13"></p>
+</div>
+
+<div id="condicionales6Formulario" style="display: none;">
+    <h2>6. Dados dos números A y B, sumarlos si al menos uno de ellos es negativo, en caso contrario multiplicarlos.</h2>
+    <form id="condicional6Form">
+        <label for="numTrece">Por favor, ingrese un valor para a: </label>
+        <input type="number" id="numTrece" name="numTrece"><br><br>
+        <label for="numCatorce">Por favor, ingrese el valor para b: </label>
+        <input type="number" id="numCatorce" name="numCatorce"><br><br>
+        <button type="button" onclick="condicional6()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado14"></p>
+</div>
+
+<div id="condicionales7Formulario" style="display: none;">
+    <h2>7. Escribir un algoritmo que determine si un año es bisiesto o no.</h2>
+    <form id="condicional7Form">
+        <label for="year">Por favor, ingrese el año que desea saber si es o no bisiesto </label>
+        <input type="number" id="year" name="year"><br><br>
+        <button type="button" onclick="condicional7()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado15"></p>
+</div>
+
+     <!-- menu de ciclos desde aqui-->
+     <div id="ejerciciosCiclos" style="display: none;">
+        <h1>Ejercicios ciclos</h1>
+        <label for="ciclos">Operadores</label>
+        <select id="ciclos" name="ciclos">
+            <option value="ciclos0">0. Elegir</option>
+            <option value="ciclos1">1. Imprimir todos los múltiplos de 3 que hay entre 1 y 100.</option>
+            <option value="ciclos2">2. Imprimir los números impares entre 0 y 100.</option>
+            <option value="ciclos3">3. Imprimir los números pares del 1 al 100</option>
+            <option value="ciclos4">4. Escribir un programa que imprima por pantalla los cuadrados de los números del 1 al 30.</option>
+            <option value="ciclos5">5. Escribir un programa que sume los cuadrados de los cien primeros números naturales,
+            mostrando el resultado en pantalla. </option>
+            <option value="ciclos6">6. Dados dos números naturales, el primero menor que el segundo, generar y mostrar todos los
+            números comprendidos entre ellos en secuencia ascendente</option>
+            <option value="ciclos7">7. Sumar todos los números que se digitan por teclado mientras no sea cero.</option>
+        </select>
+    </div>
+    <!-- menu de ciclos hasta aqui-->
+<div id="ciclos1Formulario" style="display: none;">
+
+    <h2>1. Imprimir todos los múltiplos de 3 que hay entre 1 y 100</h2>
+    <h3>Resultado:</h3>
+    <button onclick="ciclos1()">Mostrar Múltiplos de 3</button>
+    <div id="resultado16"></div>
+</div>
+
+<div id="ciclos2Formulario" style="display: none;">
+    <h2>2. Imprimir los números impares entre 0 y 100</h2>
+    <h3>Resultado:</h3>
+    <button onclick="ciclos2()">Mostrar numeros impares</button>
+    <div id="resultado17"></div>
+</div>
+
+<div id="ciclos3Formulario" style="display: none;">
+    <h2>3. Imprimir los números pares del 1 al 100</h2>
+    <h3>Resultado:</h3>
+    <button onclick="ciclos3()">Mostrar numeros pares</button>
+    <div id="resultado18"></div>
+</div>
+
+<div id="ciclos4Formulario" style="display: none;">
+    <h2>4. Escribir un programa que imprima por pantalla los cuadrados de los números del 1 al 30</h2>
+    <h3>Resultado:</h3>
+    <button onclick="ciclos4()">Calcular</button>
+    <div id="resultado19"></div>
+</div>
+
+<div id="ciclos5Formulario" style="display: none;">
+    <h2>5. Escribir un programa que sume los cuadrados de los cien primeros números naturales,
+    mostrando el resultado en pantalla.</h2>
+    <h3>Resultado:</h3>
+    <button onclick="ciclos5()">Calcular suma</button>
+    <div id="resultado20"></div>
+</div>
+
+<div id="ciclos6Formulario" style="display: none;">
+    <h2>6. Dados dos números naturales, el primero menor que el segundo, generar y mostrar todos los
+    números comprendidos entre ellos en secuencia ascendente.</h2>
+    <form id="ciclos6Form">
+        <label for="numQuince">Por favor, ingrese el valor para el primer numero: </label>
+        <input type="number" id="numQuince" name="numQuince"><br><br>
+        <label for="numDieciseis">Por favor, ingrese el valor para el segundo numero</label>
+        <input type="number" id="numDieciseis" name="numDieciseis"><br><br>
+        <button type="button" onclick="ciclos6()">Calcular</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <p id="resultado21"></p>
+</div>
+
+<div id="ciclos7Formulario" style="display: none;">
+    <h2>7. Sumar todos los números que se digitan por teclado mientras no sea cero.</h2>
+    <button onclick="ciclos7()">Empezar suma</button>
+    <h3>Resultado:</h3>
+    <div id="resultado22"></div>
+</div>
+
+    <script src="main2.js"></script>
+
+</body>
+</html>
